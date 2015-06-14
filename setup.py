@@ -58,7 +58,8 @@ setup(
       url               = 'http://code.google.com/p/surfrdf/',
       download_url      = 'http://pypi.python.org/pypi/SuRF/',
       platforms         = ['any'],
-      packages          = ['surf'],
+      packages          = ['surf', 'surf.plugin', 'surf.query',
+                           'surf.query.translator', 'surf.resource'],
       requires          = ['simplejson'] if is_python(2,5) else [],
       install_requires  = [
                               'rdflib>=3.2.1',
